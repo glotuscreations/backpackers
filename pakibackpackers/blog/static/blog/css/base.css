@@ -1,0 +1,13 @@
+body {
+  font-family: 'Playfair Display', serif;
+}
+.navbar-brand{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+h2 {
+color: #0b208c;
+}
+.collapse .navbar-collapse{
+  color:#black;
+}

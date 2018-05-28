@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Pakistani Backpackers is a backpacking blog for Pakistani travelers who want to travel the world on a budget. Follow our journey, as we explore the world on the Pakistani passort">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="{% static 'blog/css/base.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Playfair+Display" rel="stylesheet">
+
+  <link rel="shortcut icon" href="{% static 'blog/favicon.ico' %}"/>
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+   (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-3938414518584171",
+        enable_page_level_ads: true
+   });
+</script>
+
+
+
+<title>Pakistani Backpackers</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#89ffbe;">
+  <a class="navbar-brand" href="{% url 'home' %}">Pakistanibackpackers.com</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="mynav">
+    <div class="navbar-nav" style="color:#12245b;">
+      <a class="nav-item nav-link active" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="{% url 'about' %}">About</a>
+      <a class="nav-item nav-link active" href="https://www.facebook.com/pakistanibackpackers/">Facebook</a>
+    </div>
+  </div>
+</nav>
+
+    <div class="container">
+      {% load static %}
+      <img src="{% static 'blog/logo.jpg' %}">
+
+
+
+      {% block content %}
+          {% endblock %}
+
+
+  </div>
+
+  </body>
+</html>
